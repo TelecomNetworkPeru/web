@@ -1,0 +1,122 @@
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none; /* Ocultar el ícono del menú en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 4px;
+    width: 30px;
+    background: white;
+    margin: 4px 0;
+}
+
+/* fin menu de navegacion */
+
+/* Estilos de productos */
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centra los elementos verticalmente */
+    width: 23%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #000000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.producto h2 {
+    margin: 10px 0;
+}
+
+.producto p {
+    margin-bottom: auto; /* Evita que el texto se baje al centrar los botones */
+}
+
+.resaltado {
+    background-color: yellow;
+    text-decoration: underline; /* Esto agrega el subrayado */
+}
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    main, footer{
+        max-width: 100%;
+    }
+
+    .menu {
+        display: none; /* Ocultar la lista de menú en pantallas pequeñas */
+        flex-direction: column;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .menu.active {
+        display: flex; /* Mostrar la lista de menú cuando el menú está activo */
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: flex; /* Mostrar el ícono del menú en pantallas pequeñas */
+    }
+
+    .productos {
+        flex-direction: column;
+    }
+
+    .producto {
+        width: 95%;
+    }
+}
+
+.nav-item a:hover{
+    background-color: rgb(47, 78, 255);
+    padding: 15px 5px;
+    color: black;
+    border-bottom: 5px solid #ffae00;
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+  }
+
