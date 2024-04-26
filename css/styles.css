@@ -438,6 +438,11 @@ body{
   font-size: 16px;
   margin: 10px 0;
 }
+
+.contact-info {
+  word-wrap: break-word; /* Ajusta el texto para que quepa dentro del contenedor */
+}
+
 .colorful-border {
   border: 2px solid transparent;
   border-image: linear-gradient(0deg, #f06, #f90, #09f, #f06);
@@ -575,4 +580,19 @@ table, th, td {
 
 .style-container .btn {
   margin-top: auto; /* Alinea el botón hacia abajo dentro del contenedor */
+}
+
+@media (max-width: 1310px) {
+  .navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+  }
+
+  .navbar-nav .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.bg-custom {
+  background-color: rgb(106, 190, 250); /* Cambia #ff0000 por el color que desees */
 }
