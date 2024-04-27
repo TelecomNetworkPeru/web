@@ -85,12 +85,12 @@ h1, h2, h3 {
   width: 280px;
   height: auto;
 }
-/*header {
+*header {
   
   color: #fff;
   padding: 0px;
   text-align: center;
-}*/
+}
 /* computers*/
 #galeria img{
   width: 100%;
@@ -184,7 +184,7 @@ p {
 }
 
 .container-img{
-  background-color: rgba(77, 196, 243, 0.7);
+  background-color: rgb(255, 255, 255);
   color: #fff;
   padding: 0px;
 
@@ -262,7 +262,7 @@ tr:hover {
     max-width: 100%; /* Ancho máximo del 100% para hacerlos responsive */
     width: auto; /* Ancho automático para adaptarse al contenido */
     box-sizing: border-box; /* Mantener el tamaño total, incluyendo el relleno */
-    background-color: #57b7ee;
+    background-color: #91c2df;
 }
 .buton-manten{
   text-align: center; /* Centrar los botones horizontalmente */
@@ -406,7 +406,7 @@ th {
 *
 
 body{
-  background: linear-gradient( #c1ebff 30%, #c1ebff 10%);
+  background: linear-gradient( #ffffff 30%, #ffffff 10%);
   align-items: center;
     justify-content: center;
     
@@ -594,5 +594,5 @@ table, th, td {
 }
 
 .bg-custom {
-  background-color: #6abefa; 
+  background-color: #6abefa; /* Cambia #ff0000 por el color que desees */
 }
