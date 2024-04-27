@@ -120,3 +120,13 @@
     font-weight: bold;
   }
 
+  .style-container {
+    background-color: #f8f9fa; /* Color de fondo gris claro */
+    border: 2px solid #000000; /* Borde negro de 2 píxeles de grosor */
+    border-radius: 0.75rem; /* Grado de redondeo de los bordes */
+    box-shadow: none; /* Elimina el efecto de sombra */
+  }
+
+  
+
+  
