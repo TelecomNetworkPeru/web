@@ -28,11 +28,14 @@
 
 /* fin menu de navegacion */
 
-/* Estilos de productos */
+/* ESTILOS DE PRODUCTOS */
 .productos {
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: space-between; /* Distribución equitativa de los productos */
+    flex-wrap: wrap; /* Permitir que los productos se envuelvan en filas */
+    gap: 10px; /* Espaciado horizontal entre los productos */
+    margin: 0 auto; /* Centra la sección de productos en el medio */
+    max-width: 80%; /* Limita el ancho de la sección de productos */
 }
 
 .producto {
@@ -40,8 +43,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center; /* Centra los elementos verticalmente */
-    width: 23%;
-    margin: 10px;
+    width: calc(22% - 10px); /* Reducido el ancho de cada producto */
+    margin-bottom: 20px; /* Espacio vertical entre los productos */
     padding: 10px;
     border: 2px solid #000000;
     text-align: center;
@@ -62,10 +65,13 @@
     margin-bottom: auto; /* Evita que el texto se baje al centrar los botones */
 }
 
+
 .resaltado {
     background-color: yellow;
     text-decoration: underline; /* Esto agrega el subrayado */
 }
+
+
 /* Estilos responsivos */
 @media screen and (max-width: 768px) {
     header {
@@ -126,7 +132,4 @@
     border-radius: 0.75rem; /* Grado de redondeo de los bordes */
     box-shadow: none; /* Elimina el efecto de sombra */
   }
-
-  
-
   
