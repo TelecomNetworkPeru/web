@@ -124,7 +124,7 @@
 
 .navbar-nav .nav-link {
     font-weight: bold;
-  }
+}
 
   .style-container {
     background-color: #f8f9fa; /* Color de fondo gris claro */
@@ -132,4 +132,64 @@
     border-radius: 0.75rem; /* Grado de redondeo de los bordes */
     box-shadow: none; /* Elimina el efecto de sombra */
   }
+.bubble-text {
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  &.split-text {
+    display: inline-flex;
+  }
+
+  & .split-char {
+    font-weight: 200;
+    transition: font-weight 0.5s ease;
+
+    &:hover {
+      font-weight: var(--_fw-900);
+      color: var(--_clr-900);
+    }
+
+    /* // right side */
+    &:hover + .split-char {
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
+    }
+    &:hover + .split-char + .split-char {
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
+    }
+
+    /* // left side */
+    &:has(+ .split-char:hover) {
+      font-weight: var(--_fw-700);
+      color: var(--_clr-700);
+    }
+    &:has(+ .split-char + .split-char:hover) {
+      font-weight: var(--_fw-400);
+      color: var(--_clr-400);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+    .bubble-text {
+      font-size: 2rem;
+    }
+}
+  
+@media (min-width: 768px) {
+    .bubble-text {
+      font-size: 3rem;
+    }
+}
+  
+@media (min-width: 1200px) {
+    .bubble-text {
+      font-size: 4rem;
+    }
+}
   
