@@ -815,9 +815,3 @@ table, th, td {
   background: url(blue.png);
   background-size: cover;
 }
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
