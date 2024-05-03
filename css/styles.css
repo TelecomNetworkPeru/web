@@ -394,20 +394,19 @@ th {
 
 /* ESTO ES PARA EL FOOTER */
 .terminar {
-  background-color: rgba(1, 1, 1, 0.7); /* Fondo negro con opacidad */
+  --footer-bg-color: rgba(1, 1, 1, 0.7);
+  background-color: var(--footer-bg-color);
   color: #fff; /* Color de texto blanco */
-  padding-top: 2rem; /* Reduce el espacio superior */
-  padding-bottom: 2rem; /* Reduce el espacio inferior */
+  padding: 2rem 0; /* Reduce el espacio superior e inferior */
+  position: relative;
 }
 
 .ewk_cont_footer .container.terminar {
-  padding-top: 1rem; /* Reduce el espacio superior del contenedor */
-  padding-bottom: 1rem; /* Reduce el espacio inferior del contenedor */
+  padding: 1rem 0; /* Reduce el espacio superior e inferior del contenedor */
 }
 
 .ewk_cont_footer .row {
-  margin-top: 1rem; /* Reduce el margen superior entre las filas del footer */
-  margin-bottom: 1rem; /* Reduce el margen inferior entre las filas del footer */
+  margin: 1rem 0; /* Reduce el margen superior e inferior entre las filas del footer */
 }
 
 .ewk_cont_footer .col-md-3 {
@@ -806,3 +805,19 @@ table, th, td {
   align-items: center;
 }
 
+#wrap {
+  width: 964px;
+  margin: auto;
+  /* min-height: 100%; */
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -40px;
+  background: url(blue.png);
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
