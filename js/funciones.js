@@ -1,4 +1,6 @@
 
+// Para los botones de muestra de descripción
+
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButtons = document.querySelectorAll(".toggle-button");
     
@@ -121,3 +123,4 @@ document.getElementById("search-form").addEventListener("submit", (event) => {
     event.preventDefault();
     realizarBusqueda();
 });
+
