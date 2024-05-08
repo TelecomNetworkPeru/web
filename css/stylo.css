@@ -9,7 +9,7 @@
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: rgb(163, 165, 175);
     font-weight: bold;
 }
 
@@ -22,7 +22,7 @@
 .menu-icon span {
     height: 4px;
     width: 30px;
-    background: white;
+    background: rgb(224, 22, 22);
     margin: 4px 0;
 }
 
@@ -59,6 +59,7 @@
 
 .producto h2 {
     margin: 10px 0;
+    color: white; 
 }
 
 .producto p {
@@ -115,10 +116,10 @@
 }
 
 .nav-item a:hover{
-    background-color: rgb(47, 78, 255);
+    background-color: #6ea8fe;
     padding: 15px 5px;
     color: black;
-    border-bottom: 5px solid #ffae00;
+    border-bottom: 5px solid #3d8bfd;
     border-radius: 5px;
 }
 
@@ -128,7 +129,7 @@
 
   .style-container {
     background-color: #f8f9fa; /* Color de fondo gris claro */
-    border: 2px solid #000000; /* Borde negro de 2 píxeles de grosor */
+    border: 2px solid #fffbfb; /* Borde negro de 2 píxeles de grosor */
     border-radius: 0.75rem; /* Grado de redondeo de los bordes */
     box-shadow: none; /* Elimina el efecto de sombra */
   }
@@ -192,4 +193,7 @@
       font-size: 4rem;
     }
 }
+
+
+
   
